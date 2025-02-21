@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Message from Devansh</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;700&display=swap');
+
+      /* Background with soft gradient */
+      body {
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #C71585; /* Dark Pink */
+        margin: 0;
+        padding: 0;
+        overflow-y: auto;
+      }
+
+      /* Beautiful container styling */
+      .book {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      /* Glassmorphism effect for pages */
+      .page {
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        width: 85%;
+        max-width: 600px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+
+      /* Hover effect */
+      .page:hover {
+        transform: scale(1.03);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      h1, h2 {
+        font-family: 'Pacifico', cursive;
+        color: #67057a; /* Deep Purple */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      p {
+        font-size: 18px;
+        color: #540064;
+        font-weight: 500;
+      }
+
+      /* Video styling */
+      video {
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        width: 80%;
+        max-width: 400px;
+        height: auto;
+      }
+
+      /* Image styling */
+      img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        margin-top: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .page {
+        animation: fadeIn 1s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="book">
+      <!-- First Page: Message -->
+      <div class="page">
+        <h1>A Message for You, Hope You Like It! 💖</h1>
+        <p>From Devansh.<br />Love yaa 💕</p>
+      </div>
+
+      <!-- Second Page: Video -->
+      <div class="page">
+        <h2>So, Here’s Something for You! 🎥</h2>
+        <video src="video.mp4" controls></video>
+        <p>Play the video and read the lines before starting.</p>
+      </div>
+
+      <!-- Third Page: Love Message -->
+      <div class="page">
+        <h2>My Heartfelt Words 💌</h2>
+        <p>
+          From the moment I met you, my world has been filled with joy, warmth, and endless love. 
+          You are the light that brightens my darkest days and the reason behind my happiest smiles. 
+          Every little thing about you—the way you laugh, the way you care, the way you simply exist—means the world to me.  
+        </p>
+      </div>
+
+      <!-- Fourth Page: Image with Love Note -->
+      <div class="page">
+        <img src="1a.jpg.webp" alt="Image 1" />
+      </div>
+
+      <!-- Fifth Page: Beauty Compliment -->
+      <div class="page">
+        <h2>Your Beauty >>> ✨✨</h2>
+        <p>
+          Aarya, your beauty is like a gentle sunrise—radiant, warm, and mesmerizing.  
+          Your eyes hold the sparkle of a thousand stars, and your smile lights up even the darkest days.  
+          Every glance, every movement, every little detail about you is pure magic.  
+          You are not just beautiful on the outside, but your kindness and grace make you even more breathtaking. 💖✨  
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

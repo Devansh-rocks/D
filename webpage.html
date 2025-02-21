@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Love You Aarya</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #f984b5, #f57b8f);
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color: #fff;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .heart-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .heart {
+      width: 120px;
+      height: 120px;
+      fill: #ff4d6d;
+      animation: pulse 1.5s infinite ease-in-out;
+      filter: drop-shadow(0 0 10px #ff759b);
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px #ff795b);
+      }
+      50% {
+        transform: scale(1.2);
+        filter: drop-shadow(0 0 30px #ff795b);
+      }
+    }
+
+    .shayari-text {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #ffebde;
+      display: inline-block;
+      line-height: 1.5;
+      opacity: 0;
+      animation: fadeInText 1.5s forwards;
+    }
+
+    @keyframes fadeInText {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .word {
+      opacity: 0;
+      display: inline-block;
+      animation: fadeInWord 1.5s forwards;
+    }
+
+    @keyframes fadeInWord {
+      to { opacity: 1; }
+    }
+
+    /* Apply animation delay dynamically using CSS nth-child */
+    .word:nth-child(n) {
+      animation-delay: calc(0.5s * var(--i));
+    }
+
+    .propose-btn {
+      background-color: #ff4d6d;
+      border: none;
+      padding: 15px 30px;
+      color: white;
+      font-size: 1.2em;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .propose-btn:hover {
+      background-color: #ff759b;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart-container">
+    <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.53L12 21.35z"/>
+    </svg>
+
+    <p class="shayari-text">
+      <span class="word" style="--i:1">Hey</span>
+      <span class="word" style="--i:2">Aarya</span>
+      <span class="word" style="--i:3">My</span>
+      <span class="word" style="--i:4">Princess</span><br>
+      <span class="word" style="--i:5">I</span>
+      <span class="word" style="--i:6">Have</span>
+      <span class="word" style="--i:7">so</span>
+      <span class="word" style="--i:8">much</span>
+      <span class="word" style="--i:9">to</span>
+      <span class="word" style="--i:10">say</span>
+      <span class="word" style="--i:11">but</span>
+      <span class="word" style="--i:12">words</span>
+      <span class="word" style="--i:13">can't</span>
+      <span class="word" style="--i:14">express</span>
+      <span class="word" style="--i:15">it.</span>
+    </p>
+
+    <button class="propose-btn" onclick="redirectToBook()">
+      Click: So This is for you💖
+    </button>
+  </div>
+
+  <script>
+    function redirectToBook() {
+      window.location.href = "book.html";
+    }
+  </script>
+</body>
+</html>
